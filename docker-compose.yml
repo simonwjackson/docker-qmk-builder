@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+    qmk_builder:
+        build:
+            context: .
+        volumes:
+            - '/Users/simonwjackson/storage/code/github/simonwjackson/qmk_firmware:/qmk_firmware'
+        environment:
+            - KEYBOARD=crkbd
+            - KEYMAP=simonwjackson
